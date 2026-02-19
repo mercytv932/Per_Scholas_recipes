@@ -2,17 +2,73 @@
 <html>
   <head>
     <title>Recipes</title>
+    <style>
+      body{
+        /* background-color: rgb(12, 201, 231); */
+        background-color: rgb(124, 255, 255);
+      }
+
+      h1{
+        text-align: center;
+        color: #222;
+      }
+
+      #img{
+        border: 1px #333;
+        margin: 7px;
+        width: 400px;
+        height: 280px;
+      }
+
+      h2{
+        color: red;
+        font-family: sans-serif;
+      }
+
+      #description{
+        padding: 10px;
+        border: 2px #777;
+      }
+
+      #description p{
+        font-family: serif;
+      }
+
+      .ingredients-section{
+        background-color: bisque;
+        padding: 8px;
+      }
+
+      .ingredients-section li{
+        color: #333;
+      }
+
+      a{
+        color: rgb(255, 46, 46);
+        text-decoration: none;
+      }
+
+      ul{
+        list-style-type: none;
+      }
+
+
+    </style>
   </head>
   <body>
 
     <h1>Chocolate Fudge</h1>
-    <img src="pexels-pixabay-65882.jpg" alt="chocolate">
+    <img src="pexels-pixabay-65882.jpg" alt="chocolate" id="img">
+   
     <h2>Description</h2>
+    <div id="description">
     <p>Melt chocolate with a little butter and sweetened condensed milk in a pan.</p>
     <p>Stir until smooth and pour into a lined tray</p>
     <p>Chill in the fridge until firm, then cut into squares and enjoy.</p>
+    </div>
+    
     <h2>Ingredients</h2>
-    <ul>
+    <ul class="ingredients-section">
       <li>Chocolate</li>
       <li>Butter</li>
       <li>Sweetened condensed milk</li>
@@ -30,6 +86,7 @@
       <li><a href="#">Classic Chocolate Fudge</a></li>
       <li><a href="#">Vanilla Chocolate Fudge</a></li>
     </ul>
+
     <script src="script.js"></script>
   </body>
 </html>
